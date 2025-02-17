@@ -37,7 +37,7 @@
   border-radius: 30px;
   margin: 20px auto;
   margin-top: -71%;
-  margin-left: -70%;
+  margin-left: -60%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -369,7 +369,7 @@ color: #1D252D;
 .news{
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: 50vh;
   background-color: #000000;
 }
 .footer {
@@ -381,8 +381,7 @@ color: #1D252D;
 }
 
 .footer .logo {
-  font-size: 18px;
-  font-weight: bold;
+left:100px;
 }
 
 .footer .links a {
@@ -390,7 +389,9 @@ color: #1D252D;
   color: white;
   text-decoration: none;
   margin: 5px 0;
-  font-size: 14px;
+  font-family: "golos text";
+font-weight: 400;
+  font-size: 16px;
 }
 
 .footer .links a:hover {
@@ -399,6 +400,17 @@ color: #1D252D;
 
 .newsletter {
   max-width: 300px;
+}
+.newsletter p{
+  font-family: 'Golos Text';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+display: flex;
+align-items: center;
+letter-spacing: -0.01em;
+color: rgba(255, 255, 255, 0.5);
 }
 
 .newsletter input {
@@ -412,10 +424,22 @@ color: #1D252D;
 .newsletter button {
   padding: 10px;
   border: none;
-  background: white;
-  color: black;
+  background:#ffffff;
+  color:#ffffff;
+  opacity: 0%;
   cursor: pointer;
   border-radius: 5px;
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 24px;
+gap: 10px;
+width: 125px;
+height: 56px;
+border: 1px solid #FFFFFF;
+border-radius: 0px 4px 4px 0px;
 }
 
 .social-links {
@@ -432,6 +456,15 @@ color: #1D252D;
   text-align: center;
   padding: 10px;
   border-top: 1px solid #333;
+}
+.bbb{
+width: 37px;
+height: 63px;
+}
+
+.footer-images{
+width: 100px;
+height: 63px;
 }
 @media (max-width: 768px) {
   .footer {
