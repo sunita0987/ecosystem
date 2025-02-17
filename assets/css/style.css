@@ -28,7 +28,7 @@
   top: 106px;
   /* transform: rotate(9.7deg); */
 }
-.navbar {
+ .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,9 +44,9 @@
 .logo {
   font-weight: 500;
   font-size: 18px;
-}
+} 
 
-.nav-links {
+ .nav-links {
   display: flex;
   gap: 20px;
   font-family: "Golos Text";
@@ -54,9 +54,9 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-}
+} 
 
-.nav-links a {
+ .nav-links a {
   text-decoration: none;
   color: #333;
   padding: 10px 15px;
@@ -68,9 +68,9 @@
 .nav-links a.active {
   background: #ffffff;
   font-weight: 500;
-}
+} 
 
-.sign-in {
+ .sign-in {
   padding: 12px 24px;
   border: 1px solid gray;
   border-radius: 20px;
@@ -80,20 +80,20 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #1d252d;
+  color: #1d252d; */
   /* transition: background 0.3s ease-in-out; */
-}
+ }
 
 .sign-in:hover {
   background: #ccc;
-}
+} 
 
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
+ h1 {
+    margin-top:-100%;
+    margin-left: -40%;
   color: #1d252d;
-  width: 705.35px;
-  height: 698.01px;
+  width: 705px;
+  height: 698px;
   font-family: "Golos Text";
   font-style: normal;
   font-weight: 500;
@@ -107,12 +107,12 @@ h1 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   transform: matrix(1, 0, 0, 1, 0, 0);
-}
+} 
 
-.cta-button {
+ .cta-button {
   display: inline-block;
   padding: 16px 24px;
-  margin-top: -50px;
+  top:-10px;
   background-color: #1d252d;
   color: #ffffff;
   border-radius: 25px;
@@ -124,16 +124,16 @@ h1 {
 }
 .cta-button:hover {
   background-color: #000000;
-}
+} 
 
-.floating-box {
-  margin-left: 200%;
+ .floating-box {
+    margin-left: 200%;
   background: rgba(255, 255, 255, 0.2);
-  padding: 8px 16px;
-  margin-top: 100px;
+  /* padding: 8px 16px; */
+  margin-top: 200px;
   border-radius: 8px;
   text-align: center;
-  justify-content: center;
+  /* justify-content: center; */
   border: 1px solid #314fd7;
   width: 86px;
   height: 72px;
@@ -144,15 +144,15 @@ h1 {
   line-height: 24px;
   font-feature-settings: "liga" off;
   color: black;
-}
+} 
 
 .banner {
   color: black;
   position: absolute;
   width: 238px;
   height: 69px;
-  left: 80px;
-  top: 249px;
+  left:-700px;
+  top: 200px;
   font-family: "Golos Text";
   font-style: normal;
   font-weight: 400;
@@ -160,10 +160,81 @@ h1 {
   line-height: 23px;
   letter-spacing: -0.02em;
   max-width: 600px;
-}
-.bold-text {
+} 
+ .bold-text {
   font-weight: bold;
 }
+
+
+.custom-button {
+    padding: 8px 14px;
+    font-family:"golos text";
+    color:black;
+    background: transparent;
+    /* border: 2px solid rgba(255, 255, 255, 0.7); */
+    border:2px solid gold;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    /* transition: all 0.3s ease-in-out; */
+}
+.custom-button:hover{
+    /* background: rgba(255, 255, 255, 0.2); */
+    color: #333;
+}
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    margin-top: 50%;
+}
+
+.stat {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.stat h2 {
+    font-size: 64px;
+    margin-bottom: 10px;
+    color:#1D252D;
+    font-family: "golos text";
+}
+
+
+.stat p {
+font-family: 'Golos Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 23px;
+letter-spacing: -0.02em;
+color: #1D252D;
+}
+
+@media (max-width: 768px) {
+    .custom-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
 @media (max-width: 768px) {
   .banner {
     font-size: 1.4rem;
@@ -179,6 +250,9 @@ h1 {
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
+  }
+  .logo{
+    margin-left: 100%;
   }
   .cta-button {
     padding: 10px 20px;
