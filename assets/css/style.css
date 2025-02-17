@@ -36,13 +36,13 @@
   background: linear-gradient(to right, #e8ecf3, #dde2ed);
   border-radius: 30px;
   margin: 20px auto;
-  max-width: 1430px;
-  margin-top: -70%;
+  margin-top: -71%;
+  margin-left: -70%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-  font-weight:500;
+  font-weight: 500;
   font-size: 18px;
 }
 
@@ -67,7 +67,7 @@
 .nav-links a:hover,
 .nav-links a.active {
   background: #ffffff;
-  font-weight:500;
+  font-weight: 500;
 }
 
 .sign-in {
@@ -75,15 +75,113 @@
   border: 1px solid gray;
   border-radius: 20px;
   text-decoration: none;
-font-family: 'Golos Text';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-color: #1D252D;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d252d;
   /* transition: background 0.3s ease-in-out; */
 }
 
 .sign-in:hover {
   background: #ccc;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1d252d;
+  width: 705.35px;
+  height: 698.01px;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 88px;
+  line-height: 88px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -3px;
+  background: linear-gradient(203.15deg, #ffffff 30.4%, #314fd7 115.77%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 16px 24px;
+  margin-top: -50px;
+  background-color: #1d252d;
+  color: #ffffff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "golos text";
+  font-weight: 500;
+}
+.cta-button:hover {
+  background-color: #000000;
+}
+
+.floating-box {
+  margin-left: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  margin-top: 100px;
+  border-radius: 8px;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid #314fd7;
+  width: 86px;
+  height: 72px;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  font-feature-settings: "liga" off;
+  color: black;
+}
+
+.banner {
+  color: black;
+  position: absolute;
+  width: 238px;
+  height: 69px;
+  left: 80px;
+  top: 249px;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  max-width: 600px;
+}
+.bold-text {
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .banner {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
 }
