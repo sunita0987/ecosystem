@@ -6,13 +6,11 @@
   text-decoration: none;
   box-sizing: border-box;
 }
-
 .section {
   display: flex;
   align-items: center;
   min-height: 100vh;
 }
-
 .container {
   width: 1100px;
   padding-left: 12px;
@@ -26,7 +24,6 @@
   height: 609px;
   left: 40%;
   top: 106px;
-  /* transform: rotate(9.7deg); */
 }
  .navbar {
   display: flex;
@@ -40,12 +37,10 @@
   margin-left: -60%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .logo {
   font-weight: 500;
   font-size: 18px;
 } 
-
  .nav-links {
   display: flex;
   gap: 20px;
@@ -55,13 +50,11 @@
   font-size: 16px;
   line-height: 24px;
 } 
-
  .nav-links a {
   text-decoration: none;
   color: #333;
   padding: 10px 15px;
   border-radius: 20px;
-  transition: background 0.3s ease-in-out;
 }
 
 .nav-links a:hover,
@@ -127,7 +120,7 @@
 
  .floating-box {
     margin-left: 200%;
-  background: rgba(255, 255, 255, 0.2);
+  /* background: rgba(255, 255, 255, 0.2); */
   margin-top: 200px;
   border-radius: 8px;
   text-align: center;
@@ -139,7 +132,6 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  font-feature-settings: "liga" off;
   color:#000000;
 } 
 
@@ -169,7 +161,7 @@
     color:black;
     background: transparent;
     /* border: 2px solid rgba(255, 255, 255, 0.7); */
-    border:2px solid gold;
+    border:2px solid gray;
     border-radius: 50px;
     text-align: center;
     font-weight: 500;
@@ -292,9 +284,9 @@ border: 1px solid rgba(255, 255, 255, 0.5);
 border-radius: 8px;
 }
 
-.step:hover {
+/* .step:hover {
   transform: scale(1.05);
-}
+} */
 
 .step-number {
   font-size: 16px;
@@ -333,18 +325,6 @@ align-items: center;
 text-align: center;
 letter-spacing: -0.01em;
 color: rgba(29, 37, 45, 0.7);
-}
-
-.step.active {
-box-sizing: border-box;
-background: linear-gradient(180deg, #F2F0FE 0%, #F6F9FF 100%);
-border-radius: 8px;
-
-}
-
-.step.active h3, 
-.step.active .paragraph {
-  color: white;
 }
 
 .easy{
