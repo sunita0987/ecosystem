@@ -128,11 +128,9 @@
  .floating-box {
     margin-left: 200%;
   background: rgba(255, 255, 255, 0.2);
-  /* padding: 8px 16px; */
   margin-top: 200px;
   border-radius: 8px;
   text-align: center;
-  /* justify-content: center; */
   border: 1px solid #314fd7;
   width: 86px;
   height: 72px;
@@ -142,11 +140,11 @@
   font-size: 18px;
   line-height: 24px;
   font-feature-settings: "liga" off;
-  color: black;
+  color:#000000;
 } 
 
 .banner {
-  color: black;
+  color:#ffffff;
   position: absolute;
   width: 238px;
   height: 69px;
@@ -183,6 +181,27 @@
 .custom-button:hover{
     /* background: rgba(255, 255, 255, 0.2); */
     color: #333;
+}
+
+.blue-image{
+position: absolute;
+width: 1303.66px;
+height: 689.74px;
+left: -496.82px;
+/* top: 78.45px; */
+background: #0025CE;
+filter: blur(200px);
+transform: rotate(10.54deg);
+}
+
+.shadow{
+position: absolute;
+width: 1366px;
+height: 814px;
+/* left: 466px; */
+top: 181px;
+background: rgba(0, 37, 206, 0.9);
+filter: blur(150px);
 }
 
 .stats-section {
