@@ -25,23 +25,25 @@
   left: 40%;
   top: 106px;
 }
- .navbar {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 40px;
-  background: linear-gradient(to right, #e8ecf3, #dde2ed);
-  border-radius: 30px;
   margin: 20px auto;
   margin-top: -71%;
   margin-left: -60%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .logo {
   font-weight: 500;
   font-size: 18px;
-} 
- .nav-links {
+}
+
+.nav-links {
+  background: rgba(255, 255, 255, 0.15);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  z-index:1;
   display: flex;
   gap: 20px;
   font-family: "Golos Text";
@@ -49,8 +51,8 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-} 
- .nav-links a {
+}
+.nav-links a {
   text-decoration: none;
   color: #333;
   padding: 10px 15px;
@@ -61,9 +63,9 @@
 .nav-links a.active {
   background: #ffffff;
   font-weight: 500;
-} 
+}
 
- .sign-in {
+.sign-in {
   padding: 12px 24px;
   border: 1px solid gray;
   border-radius: 20px;
@@ -73,17 +75,17 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #1d252d; */
+  color: #1d252d;
   /* transition: background 0.3s ease-in-out; */
- }
+}
 
 .sign-in:hover {
-  background: #ccc;
-} 
+  background-color: #cccada;
+}
 
- h1 {
-    margin-top:-100%;
-    margin-left: -40%;
+h1 {
+  margin-top: -100%;
+  margin-left: -40%;
   color: #1d252d;
   width: 705px;
   height: 698px;
@@ -100,10 +102,9 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   transform: matrix(1, 0, 0, 1, 0, 0);
-} 
+}
 
- .cta-button {
-  /* display: inline-block; */
+.cta-button {
   padding: 16px 24px;
   background-color: #1d252d;
   color: #ffffff;
@@ -116,15 +117,15 @@
 }
 .cta-button:hover {
   background-color: #000000;
-} 
+}
 
- .floating-box {
-    margin-left: 200%;
-  /* background: rgba(255, 255, 255, 0.2); */
+.floating-box {
+  margin-left: 200%;
+   background: rgba(255, 255, 255, 0.2);
   margin-top: 200px;
   border-radius: 8px;
   text-align: center;
-  border: 1px solid #314fd7;
+   border: 1px solid #314fd7; 
   width: 86px;
   height: 72px;
   font-family: "Golos Text";
@@ -132,15 +133,15 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color:#000000;
-} 
+  color: #000000;
+}
 
 .banner {
-  color:#ffffff;
+  color: #ffffff;
   position: absolute;
   width: 238px;
   height: 69px;
-  left:-600px;
+  left: -600px;
   top: 200px;
   font-family: "Golos Text";
   font-style: normal;
@@ -149,82 +150,75 @@
   line-height: 23px;
   letter-spacing: -0.02em;
   max-width: 600px;
-} 
- .bold-text {
+}
+.bold-text {
   font-weight: bold;
 }
 
-
 .custom-button {
-    padding: 8px 14px;
-    font-family:"golos text";
-    color:black;
-    background: transparent;
-    /* border: 2px solid rgba(255, 255, 255, 0.7); */
-    border:2px solid gray;
-    border-radius: 50px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    cursor: pointer;
-    /* transition: all 0.3s ease-in-out; */
+  padding: 8px 14px;
+  font-family: "golos text";
+  color: black;
+  background: transparent;
+  border:2px solid #cccada;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
 }
-.custom-button:hover{
-    /* background: rgba(255, 255, 255, 0.2); */
-    color: #333;
+.custom-button:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.blue-image{
-position: absolute;
-width: 1303.66px;
-height: 689.74px;
-left: -496.82px;
-/* top: 78.45px; */
-background: #0025CE;
-filter: blur(200px);
-transform: rotate(10.54deg);
+.blue-image {
+  position: absolute;
+  width: 1303.66px;
+  height: 689.74px;
+  left: -496.82px;
+  background: #0025ce;
+  filter: blur(200px);
+  transform: rotate(10.54deg);
 }
 
-.shadow{
-position: absolute;
-width: 1366px;
-height: 814px;
-/* left: 466px; */
-top: 181px;
-background: rgba(0, 37, 206, 0.9);
-filter: blur(150px);
+.shadow {
+  position: absolute;
+  width: 1366px;
+  height: 814px;
+  top: 181px;
+  background: rgba(0, 37, 206, 0.9);
+  filter: blur(150px);
 }
 
 .stats-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 25px;
-    padding: 20px;
-    margin-top: 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  margin-top: 50%;
 }
 .stat {
-    /* background-color: white; */
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    z-index:1;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
 }
 .stat h2 {
-    font-size: 64px;
-    margin-bottom: 10px;
-    color:#1D252D;
-    font-family: "golos text";
+  font-size: 64px;
+  margin-bottom: 10px;
+  color: #1d252d;
+  font-family: "golos text";
 }
 .stat p {
-font-family: 'Golos Text';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 23px;
-letter-spacing: -0.02em;
-color: #1D252D;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  color: #1d252d;
 }
 
 .steps-section {
@@ -234,34 +228,34 @@ color: #1D252D;
 }
 
 .header .badge {
-  /* display: inline-block; */
   background: #ffffff;
-  color: #1D252D;
+  color: #1d252d;
   padding: 8px 14px;
   border-radius: 34px;
-  border:1px solid #CCCADA;
+  border: 1px solid #cccada;
   font-weight: 500;
   font-size: 16px;
+  margin-left: 30%;
   font-family: "golos text";
-  gap:10px;
+  gap: 10px;
   cursor: pointer;
 }
-.header.badge:hover{
+.header.badge:hover {
   background: #1d252d;
 }
 
 h4 {
   margin-top: 10px;
-width: 619px;
-height: 108px;
-font-family: 'Golos Text';
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 54px;
-text-align: center;
-letter-spacing: -2px;
-color: #1D252D;
+  width: 619px;
+  height: 108px;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #1d252d;
 }
 
 .steps-container {
@@ -271,20 +265,20 @@ color: #1D252D;
   margin-top: 20px;
 }
 
-
 .step {
-  background: white;
   padding: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  /* max-width: 200px; */
-  height:256px;
+  height: 256px;
   text-align: center;
   transition: transform 0.3s ease;
-background: linear-gradient(180deg, rgba(243, 241, 255, 0.8) 0%, rgba(246, 249, 255, 0.8) 100%);
-border: 1px solid rgba(255, 255, 255, 0.5);
-border-radius: 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(243, 241, 255, 0.8) 0%,
+    rgba(246, 249, 255, 0.8) 100%
+  );
+  border: 1px solid #f6f9ff;
+  border-radius: 8px;
 }
-
 /* .step:hover {
   transform: scale(1.05);
 } */
@@ -292,59 +286,59 @@ border-radius: 8px;
 .step-number {
   font-size: 16px;
   font-weight: 500;
-  color:#1D252D;
+  color: #1d252d;
   margin-bottom: 5px;
   padding: 8px 14px;
   border-radius: 34px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   font-family: "golos text";
 }
 
 h3 {
   margin: 5px 0;
-width: 248px;
-height: 30px;
-font-family: 'Golos Text';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 150%;
-text-align: center;
-color: #1D252D;
+  width: 248px;
+  height: 30px;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #1d252d;
 }
 
 .paragraph {
-width: 234px;
-height: 88px;
-font-family: 'Golos Text';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 22px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.01em;
-color: rgba(29, 37, 45, 0.7);
+  width: 234px;
+  height: 88px;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: rgba(29, 37, 45, 0.7);
 }
-
-.easy{
-  margin-top: 20px;
+.easy {
+  margin-top: 50px;
+  margin-left: 10%;
 }
-.easy p{
-width: 515px;
-height: 48px;
-font-family: 'Golos Text';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-text-align: center;
-color: #1D252D;
+.easy p {
+  width: 515px;
+  height: 48px;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #1d252d;
 }
-
 .easy button {
-  background:#1D252D;
+  margin-top: 20px;
+  background: #1d252d;
   color: white;
   padding: 16px 24px;
   border: none;
@@ -359,43 +353,39 @@ color: #1D252D;
 }
 
 .easy button:hover {
-  background:gray;
+  background: gray;
 }
 @media (max-width: 768px) {
   .steps-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .step {
-      max-width: 90%;
+    max-width: 90%;
   }
 }
-
 @media (max-width: 768px) {
-    .custom-button {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-    }
+  .custom-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
 }
-
 @media (max-width: 768px) {
   .banner {
     font-size: 1.4rem;
   }
 }
-
 @media (max-width: 480px) {
   .banner {
     font-size: 1.2rem;
   }
 }
-
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
   }
-  .logo{
+  .logo {
     margin-left: 100%;
   }
   .cta-button {
